@@ -4,12 +4,12 @@
 
 ## Table of Contents
 
-- [What is analysis of an algorithm?](#what-is-analysis-of-an-algorithm?)
+- [What is analysis of an algorithm?](#what-is-analysis-of-an-algorithm)
 - [Asymptotic analysis](#asymptotic-analysis)
-  - [3 cases to analyze an algorithm](./3-cases-to-analyze-an-algorithm)
-    - [Best case](./best-case)
-    - [Average case](./average-case)
-    - [Worst case](./worst-case)
+  - [3 cases to analyze an algorithm](#3-cases-to-analyze-an-algorithm)
+    - [Best case](#best-case)
+    - [Average case](#average-case)
+    - [Worst case](#worst-case)
 
 ### What is analysis of an algorithm?
 
@@ -61,6 +61,6 @@ For worst case analysis, we calculate the upper bound on the running time of an 
 
 **Eg**: For linear search problem, let us assume we are considering all the cases including the element not present.
 
-### References
+##### References
 
 - [Analysis of Algorithms](https://www.geeksforgeeks.org/analysis-of-algorithms-set-2-asymptotic-analysis/)
