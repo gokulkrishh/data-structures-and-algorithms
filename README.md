@@ -7,13 +7,13 @@
 - [Analysis of an algorithm](#analysis-of-an-algorithm)
 - [Asymptotic analysis](#asymptotic-analysis)
   - [3 cases to analyze an algorithm](#3-cases-in-algorithm-analysis)
-    - [Best case](#1.-best-case)
-    - [Average case](#2.-average-case)
-    - [Worst case](#3.-worst-case)
+    - [Best case](#1-best-case)
+    - [Average case](#2-average-case)
+    - [Worst case](#3-worst-case)
 - [Asymptotic notations](#asymptotic-notations)
-  - [Theta notation](#1.-theta-notation-θ---best-case)
-  - [Omega notation](#2.-omega-notation-ω---average-case)
-  - [BigO notation](#3.-bigo-notation-o---worst-case)
+  - [Theta notation](#1-theta-notation-θ---best-case)
+  - [Omega notation](#2-omega-notation-ω---average-case)
+  - [BigO notation](#3-bigo-notation-o---worst-case)
 
 ### Analysis of an algorithm
 
@@ -57,7 +57,7 @@ For best case analysis, we calculate the lower bound on the running time of an a
 
 **Eg**: For linear search problem, best case occurs when the target is found at the first location of the list.
 
-Time Complexity: **`O(1)`**
+##### Time Complexity: **`Θ(1)`**
 
 > Note: Here **`O`** (pronounced as BigO) is called **asymptotic notation**. More on this later.
 
@@ -67,7 +67,7 @@ For average case analysis, we calculate by taking all inputs and computing the t
 
 **Eg**: For linear search problem, worst case occurs when the target is not present in the given the list.
 
-Time Complexity: **`O(N)`**
+##### Time Complexity: **`Ω(N)`**
 
 #### 3. Worst case
 
@@ -75,7 +75,7 @@ For worst case analysis, we calculate the upper bound on the running time of an 
 
 **Eg**: For linear search problem, let us assume we are considering all the cases including the element not present.
 
-Time Complexity: **`O(N)`**
+##### Time Complexity: **`O(N)`**
 
 ### Asymptotic notations
 
