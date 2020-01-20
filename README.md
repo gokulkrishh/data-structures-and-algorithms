@@ -11,9 +11,9 @@
     - [Average case](#average-case)
     - [Worst case](#worst-case)
 - [Asymptotic notations](#asymptotic-notations)
-  - [Theta notation](<#theta-notation-(Θ)->)
-  - [Omega notation](<#omega-notation-(Ω)->)
-  - [BigO notation](<#bigo-notation-(O)->)
+  - [Theta notation](theta-notation-θ---best-case)
+  - [Omega notation](#omega-notation-ω---average-case)
+  - [BigO notation](bigo-notation-o---worst-case)
 
 ### Analysis of an algorithm
 
@@ -77,7 +77,7 @@ For worst case analysis, we calculate the upper bound on the running time of an 
 
 Time Complexity: **`O(N)`**
 
-#### Asymptotic notations
+### Asymptotic notations
 
 Asymptotic notations are mathematical tools to represent the **time complexity** of algorithms for asymptotic analysis.
 
@@ -91,7 +91,7 @@ There are 3 types of asymptotic notations:
 
 Theta (Θ) notation bounds the function above and below and can be deduced by dropping the lower order terms and ignoring leading constants. This is least used notation among all three. Since best case of an algorithm is generally not useful.
 
-**Example**:
+##### Example:
 
 **`3(N^2) + 2(N^3) + 1`** = **`Θ(N^3)`**
 
@@ -103,7 +103,7 @@ Omega (Ω) notation provides an asymptotic lower bound for an algorithm. Similar
 
 BigO (O) notation defined the upper bound of an algorithm. It bounds the function only from above unlike Theta notation which takes both above and below.
 
-**Example**:
+##### Example:
 
 **`5(N^2) + 2(N) + 1`** = **`O(N^2)`**.
 
@@ -111,7 +111,7 @@ Lets say,
 
 **`O(g(n))`** = { **`f(n): there exists constants c and n0, f(n) <= c times g(n), for all n >= n0`** }
 
-**Example**:
+##### Example:
 
 If **`f(n)`** = **`5(N^2) + 2(N) + 1`** is equivalent to **`O(N^2)`**
 
@@ -123,7 +123,7 @@ where
 
 **`n0`** = **`1`**
 
-##### References
+##### References:
 
 - [Analysis of algorithms - Part 1](https://www.geeksforgeeks.org/analysis-of-algorithms-set-1-asymptotic-analysis/)
 - [Analysis of Algorithms - Part 2](https://www.geeksforgeeks.org/analysis-of-algorithms-set-2-asymptotic-analysis/)
