@@ -13,6 +13,8 @@
   - [Theta notation](#1-theta-notation-θ---best-case)
   - [Omega notation](#2-omega-notation-ω---average-case)
   - [BigO notation](#3-bigo-notation-o---worst-case)
+- [Time complexity](#time-complexity) - WIP
+- [Space complexity](#space-complexity) - WIP
 
 ### Analysis of an algorithm
 
@@ -125,6 +127,10 @@ where
 **`c`** = **`8`** which is (5 + 2 + 1), **`f(n) <= 8(N^2), n >= 1`**
 
 **`n0`** = **`1`**
+
+### Time complexity
+
+### Space complexity
 
 ##### References:
 
