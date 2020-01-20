@@ -58,7 +58,7 @@ linearSearch([1, 5, 6, 7, 8, 9, 10, 11], 10);
 
 ##### Time Complexity: **`Θ(1)`**
 
-> Note: Here **`O`** (pronounced as BigO) is called **asymptotic notation**. More on this later.
+> Note: Here **`Θ`** (pronounced as Theta). More on this later.
 
 #### 2. Average case
 
@@ -68,6 +68,8 @@ For average case analysis, we calculate by taking all inputs and computing the t
 
 ##### Time Complexity: **`Ω(N)`**
 
+> Note: Here **`Ω`** (pronounced as Omega).
+
 #### 3. Worst case
 
 For worst case analysis, we calculate the upper bound on the running time of an algorithm. Sum all the calculated values and divide the sum by total number of inputs.
@@ -76,19 +78,21 @@ For worst case analysis, we calculate the upper bound on the running time of an 
 
 ##### Time Complexity: **`O(N)`**
 
+> Note: Here **`O`** (pronounced as BigO).
+
 ### Asymptotic notations
 
 Asymptotic notations are mathematical tools to represent the **time complexity** of algorithms for asymptotic analysis.
 
 There are 3 types of asymptotic notations:
 
-1. Theta notation
-2. Omega notation
-3. BigO notation
+1. Theta notation (Θ)
+2. Omega notation (Ω)
+3. BigO notation (O)
 
 #### 1. Theta notation (Θ) - (**Best Case**)
 
-Theta (Θ) notation bounds the function above and below and can be deduced by dropping the lower order terms and ignoring leading constants. This is least used notation among all three. Since best case of an algorithm is generally not useful.
+Theta notation bounds the function above and below and can be deduced by dropping the lower order terms and ignoring leading constants. This is least used notation among all three. Since best case of an algorithm is generally not useful.
 
 ##### Example:
 
@@ -96,11 +100,11 @@ Theta (Θ) notation bounds the function above and below and can be deduced by dr
 
 #### 2. Omega notation (Ω) - (**Average Case**)
 
-Omega (Ω) notation provides an asymptotic lower bound for an algorithm. Similar to the best case, average case is not very useful. We should be more interested in **worst case**.
+Omega notation provides an asymptotic lower bound for an algorithm. Similar to the best case, average case is not very useful. We should be more interested in **worst case**.
 
 #### 3. BigO notation (O) - (**Worst Case**)
 
-BigO (O) notation defined the upper bound of an algorithm. It bounds the function only from above unlike Theta notation which takes both above and below.
+BigO notation defined the upper bound of an algorithm. It bounds the function only from above unlike Theta notation which takes both above and below.
 
 ##### Example:
 
