@@ -6,10 +6,9 @@
 
 - [Analysis of an algorithm](#analysis-of-an-algorithm)
 - [Asymptotic analysis](#asymptotic-analysis)
-  - [3 cases to analyze an algorithm](#3-cases-in-algorithm-analysis)
-    - [Best case](#1-best-case)
-    - [Average case](#2-average-case)
-    - [Worst case](#3-worst-case)
+  - [Best case](#1-best-case)
+  - [Average case](#2-average-case)
+  - [Worst case](#3-worst-case)
 - [Asymptotic notations](#asymptotic-notations)
   - [Theta notation](#1-theta-notation-θ---best-case)
   - [Omega notation](#2-omega-notation-ω---average-case)
@@ -27,11 +26,15 @@ Using `asymptotic analysis`.
 
 The process of finding the computational complexity of an algorithm -- the amount of time, storage, or other resources needed to execute the solution.
 
-#### 3 cases in algorithm analysis
+##### There are 3 cases in algorithm analysis:
 
 1. Best case
 2. Average case
 3. Worst case
+
+#### 1. Best case
+
+For best case analysis, we calculate the lower bound on the running time of an algorithm.
 
 To explain the above cases, let us see an example.
 
@@ -51,11 +54,7 @@ function linearSearch(list, target) {
 linearSearch([1, 5, 6, 7, 8, 9, 10, 11], 10);
 ```
 
-#### 1. Best case
-
-For best case analysis, we calculate the lower bound on the running time of an algorithm.
-
-**Eg**: For linear search problem, best case occurs when the target is found at the first location of the list.
+###### For linear search problem, best case occurs when the target is found at the first location of the list.
 
 ##### Time Complexity: **`Θ(1)`**
 
@@ -65,7 +64,7 @@ For best case analysis, we calculate the lower bound on the running time of an a
 
 For average case analysis, we calculate by taking all inputs and computing the time for all inputs.
 
-**Eg**: For linear search problem, worst case occurs when the target is not present in the given the list.
+###### For linear search problem, worst case occurs when the target is not present in the given the list.
 
 ##### Time Complexity: **`Ω(N)`**
 
@@ -73,7 +72,7 @@ For average case analysis, we calculate by taking all inputs and computing the t
 
 For worst case analysis, we calculate the upper bound on the running time of an algorithm. Sum all the calculated values and divide the sum by total number of inputs.
 
-**Eg**: For linear search problem, let us assume we are considering all the cases including the element not present.
+###### For linear search problem, let us assume we are considering all the cases including the element not present.
 
 ##### Time Complexity: **`O(N)`**
 
