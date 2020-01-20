@@ -7,13 +7,13 @@
 - [Analysis of an algorithm](#analysis-of-an-algorithm)
 - [Asymptotic analysis](#asymptotic-analysis)
   - [3 cases to analyze an algorithm](#3-cases-in-algorithm-analysis)
-    - [Best case](#best-case)
-    - [Average case](#average-case)
-    - [Worst case](#worst-case)
+    - [Best case](#1.-best-case)
+    - [Average case](#2.-average-case)
+    - [Worst case](#3.-worst-case)
 - [Asymptotic notations](#asymptotic-notations)
-  - [Theta notation](theta-notation-θ---best-case)
-  - [Omega notation](#omega-notation-ω---average-case)
-  - [BigO notation](bigo-notation-o---worst-case)
+  - [Theta notation](#1.-theta-notation-θ---best-case)
+  - [Omega notation](#2.-omega-notation-ω---average-case)
+  - [BigO notation](#3.-bigo-notation-o---worst-case)
 
 ### Analysis of an algorithm
 
@@ -29,9 +29,9 @@ The process of finding the computational complexity of an algorithm -- the amoun
 
 #### 3 cases in algorithm analysis
 
-- Best case
-- Average case
-- Worst case
+1. Best case
+2. Average case
+3. Worst case
 
 To explain the above cases, let us see an example.
 
@@ -51,7 +51,7 @@ function linearSearch(list, target) {
 linearSearch([1, 5, 6, 7, 8, 9, 10, 11], 10);
 ```
 
-#### Best case
+#### 1. Best case
 
 For best case analysis, we calculate the lower bound on the running time of an algorithm.
 
@@ -61,7 +61,7 @@ Time Complexity: **`O(1)`**
 
 > Note: Here **`O`** (pronounced as BigO) is called **asymptotic notation**. More on this later.
 
-#### Average case
+#### 2. Average case
 
 For average case analysis, we calculate by taking all inputs and computing the time for all inputs.
 
@@ -69,7 +69,7 @@ For average case analysis, we calculate by taking all inputs and computing the t
 
 Time Complexity: **`O(N)`**
 
-#### Worst case
+#### 3. Worst case
 
 For worst case analysis, we calculate the upper bound on the running time of an algorithm. Sum all the calculated values and divide the sum by total number of inputs.
 
@@ -83,11 +83,11 @@ Asymptotic notations are mathematical tools to represent the **time complexity**
 
 There are 3 types of asymptotic notations:
 
-- Theta notation
-- Omega notation
-- BigO notation
+1. Theta notation
+2. Omega notation
+3. BigO notation
 
-#### Theta notation (Θ) - (**Best Case**)
+#### 1. Theta notation (Θ) - (**Best Case**)
 
 Theta (Θ) notation bounds the function above and below and can be deduced by dropping the lower order terms and ignoring leading constants. This is least used notation among all three. Since best case of an algorithm is generally not useful.
 
@@ -95,11 +95,11 @@ Theta (Θ) notation bounds the function above and below and can be deduced by dr
 
 **`3(N^2) + 2(N^3) + 1`** = **`Θ(N^3)`**
 
-#### Omega notation (Ω) - (**Average Case**)
+#### 2. Omega notation (Ω) - (**Average Case**)
 
 Omega (Ω) notation provides an asymptotic lower bound for an algorithm. Similar to the best case, average case is not very useful. We should be more interested in **worst case**.
 
-#### BigO notation (O) - (**Worst Case**)
+#### 3. BigO notation (O) - (**Worst Case**)
 
 BigO (O) notation defined the upper bound of an algorithm. It bounds the function only from above unlike Theta notation which takes both above and below.
 
