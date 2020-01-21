@@ -60,7 +60,7 @@ linearSearch([1, 5, 6, 7, 8, 9, 10, 11], 10);
 
 ##### Time Complexity: **`Θ(1)`**
 
-> Note: Here **`Θ`** (pronounced as Theta). More on this later.
+> Note: **`Θ`** is pronounced as Theta. More on this later.
 
 #### 2. Average case
 
@@ -70,7 +70,7 @@ For average case analysis, we calculate by taking all inputs and computing the t
 
 ##### Time Complexity: **`Ω(N)`**
 
-> Note: Here **`Ω`** (pronounced as Omega).
+> Note: **`Ω`** is pronounced as Omega.
 
 #### 3. Worst case
 
@@ -80,7 +80,9 @@ For worst case analysis, we calculate the upper bound on the running time of an 
 
 ##### Time Complexity: **`O(N)`**
 
-> Note: Here **`O`** (pronounced as BigO).
+> Note: **`O`** is pronounced as BigO.
+
+##### What is time complexity? How do you represent it? - Using **`Asymptotic notations`**.
 
 ### Asymptotic notations
 
@@ -98,19 +100,19 @@ Theta notation bounds the function above and below and can be deduced by droppin
 
 ##### Example:
 
-**`3(N^2) + 2(N^3) + 1`** = **`Θ(N^3)`**
+**`3(N^2) + 2(N^3) + 1`** = **`Θ(N^3)`** (Lower bound is N^2 and constants are the whole numbers in the equation)
 
 #### 2. Omega notation (Ω) - (**Average Case**)
 
-Omega notation provides an asymptotic lower bound for an algorithm. Similar to the best case, average case is not very useful. We should be more interested in **worst case**.
+Omega notation defines the lower bound of an algorithm. Similar to the best case, average case is not very useful. We should be more interested in **worst case**.
 
 #### 3. BigO notation (O) - (**Worst Case**)
 
-BigO notation defined the upper bound of an algorithm. It bounds the function only from above unlike Theta notation which takes both above and below.
+BigO notation defines the upper bound of an algorithm. It bounds the function only from above unlike `Theta notation` which takes both above and below.
 
 ##### Example:
 
-**`5(N^2) + 2(N) + 1`** = **`O(N^2)`**.
+**`5(N^2) + 2(N) + 1`** = **`O(N^2)`**
 
 Lets say,
 
