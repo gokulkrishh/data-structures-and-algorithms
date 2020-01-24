@@ -13,8 +13,8 @@
   - [Theta notation](#1-theta-notation-θ---best-case)
   - [Omega notation](#2-omega-notation-ω---average-case)
   - [BigO notation](#3-bigo-notation-o---worst-case)
-- [Time complexity](#time-complexity) - WIP
-- [Space complexity](#space-complexity) - WIP
+- [Time complexity](#time-complexity)
+- [Space complexity](#space-complexity)
 
 ### Analysis of an algorithm
 
@@ -132,7 +132,53 @@ where
 
 ### Time complexity
 
+Time complexity is **rate of growth of time with respect to the inputs** taken during the execution time.
+
+##### Example 1:
+
+```js
+function sumOfTwoNumbers(a, b) {
+  return a + b;
+}
+```
+
+When I run the above example 1 problem's the complexity is `O(1)`. Because no matter how big you inputs are it will take constant time to return the sum.
+
+##### Example 2:
+
+```js
+function sumOfList(list) {
+  var total = 0;
+  for (var i = 0; i < list.length; i++>) {
+    total += list[i] ;
+  }
+
+  return total;
+}
+```
+
+When I run the above example 2, the problem is gone take `N` times to get the total where `N` is number of items. So the time complexity is `O(N)`.
+
 ### Space complexity
+
+Space complexity is measure of how efficient your code is in terms of memory usage when it runs.
+
+> We can measure it by finding the largest memory used by the solution.
+
+##### Example 1:
+
+```js
+function sumOfList(list) {
+  var total = 0;
+  for (var i = 0; i < list.length; i++>) {
+    total += list[i] ;
+  }
+
+  return total;
+}
+```
+
+When I run the above example 1, space complexity is `O(N)` because your solution is going to store `N` times total in a variable.
 
 ##### References:
 
@@ -140,3 +186,4 @@ where
 - [Analysis of Algorithms - Part 2](https://www.geeksforgeeks.org/analysis-of-algorithms-set-2-asymptotic-analysis/)
 - [Analysis of Algorithms - Part 3](https://www.geeksforgeeks.org/analysis-of-algorithms-set-3asymptotic-notations/)
 - [Time Complexity](https://www.interviewbit.com/courses/programming/topics/time-complexity/)
+- [Space Complexity](https://www.interviewbit.com/tutorial/space-complexity/)
