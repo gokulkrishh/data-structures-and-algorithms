@@ -14,6 +14,7 @@
   - [Omega notation](#2-omega-notation-ω---average-case)
   - [BigO notation](#3-bigo-notation-o---worst-case)
 - [Time complexity](#time-complexity)
+  - [Time complexity table](#time=complexity-table)
 - [Space complexity](#space-complexity)
 
 ### Analysis of an algorithm
@@ -158,6 +159,19 @@ function sumOfList(list) {
 ```
 
 When I run the above example 2, the problem is gone take `N` times to get the total where `N` is number of items. So the time complexity is `O(N)`.
+
+### Time complexity table:
+
+| Big O          | Run Time    | 🤔  |
+| -------------- | ----------- | --- |
+| `O(1)`         | Constant    | 😃  |
+| `O(log n)`     | Logarithmic | 😀  |
+| `O(n)`         | Linear      | 🥺  |
+| `O(n * log n)` | Log Linear  | 😣  |
+| `O(n^2)`       | Quadratic   | 😖  |
+| `O(n ^ 3)`     | Cubic       | 😫  |
+| `O(2n)`        | Exponential | 😷  |
+| `O(n!)`        | Factorial   | 😭  |
 
 ### Space complexity
 
