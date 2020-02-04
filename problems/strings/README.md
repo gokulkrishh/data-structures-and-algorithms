@@ -1,9 +1,16 @@
 # Strings
 
-| Total Problems in Strings |
-| :-----------------------: |
-|             1             |
-
-|    Date     |                                           Problems                                            |                             Solutions                             |
-| :---------: | :-------------------------------------------------------------------------------------------: | :---------------------------------------------------------------: |
-| Jan 25 2020 | Given a string S and a set of words D, find the longest word in D that is a subsequence of S. | [Subsequence of given string](./1.subsequence-of-given-string.js) |
+1. [Longest Common Prefix](./1.longest_common_prefix.js)
+1. [Power of 2](./2.power_of_2.js)
+1. [Excel Sheet Column Title](./3.excel_sheet_column_title.js)
+1. [Group Of Anagrams](./4.group_of_anagrams.js)
+1. [Number To Words](./5.number_to_words.js)
+1. [Students Attendance](./6.students_attendance.js)
+1. [String Reversal With Special Characters](./7.string_reversal_without_changing_special.js)
+1. [Length Of Last Words](./8.length_of_last_word.js)
+1. [Find Longest SubString](./9.longest_substr.js)
+1. [First Unique Character](./10.first_uniq_char.js)
+1. [Implement strStr()](./11.strStr.js)
+1. [Check Anagram](./12.check_if_two_string_are_anagram.js)
+1. [First non repeating chars ](./13.first_non_repeating_char.js)
+1. [Subsequence of given string](./14.subsequence_of_given_string.js)
