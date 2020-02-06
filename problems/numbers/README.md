@@ -10,3 +10,4 @@
 1. [Find Disappeared in an Array](./8.find_disappearing_numbers.js)
 1. [Self Dividing Numbers](./9.self_dividing_numbers.js)
 1. [Find original price](./10.find_original_price.js)
+1. [Multiply Strings](./11.multiple_string.js)
