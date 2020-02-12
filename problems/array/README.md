@@ -25,3 +25,4 @@
 1. [Longest Vowel Chain](./23.longest_vowel_chain.js)
 1. [Keyboard Row](./24.keyboard_row.js)
 1. [Sum of Consecutive Integers](./25.sum_of_consecutive_integers.js)
+1. [First Duplicate](./26.first_duplicate.js)
