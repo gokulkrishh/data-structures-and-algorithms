@@ -20,24 +20,24 @@
 // Solution 1:
 
 function nonRepeatingFirstChar(S) {
-  var hash = {};
+	var hash = {};
 
-  for (var i = 0; i < S.length; i++) {
-    if (!hash[S[i]]) {
-      hash[S[i]] = 1;
-    } else {
-      hash[S[i]] += 1;
-    }
-  }
+	for (var i = 0; i < S.length; i++) {
+		if (!hash[S[i]]) {
+			hash[S[i]] = 1;
+		} else {
+			hash[S[i]] += 1;
+		}
+	}
 
-  for (var i = 0; i < S.length; i++) {
-    if (hash[S[i]] === 1) return i;
-  }
+	for (var i = 0; i < S.length; i++) {
+		if (hash[S[i]] === 1) return i;
+	}
 
-  return -1;
+	return -1;
 }
 
-nonRepeatingFirstChar('loveleetcode'); // 2
+nonRepeatingFirstChar("loveleetcode"); // 2
 
 // Time Complexity: O(N)
 // Space Complexity: O(N)
@@ -48,11 +48,11 @@ nonRepeatingFirstChar('loveleetcode'); // 2
 // Solution 2:
 
 function nonRepeatingFirstChar(S) {
-  var temp = [];
+	var temp = [];
 
-  for (var i = 0; i < S.length; i++) {
-    temp[i] = [temp[i] ? temp[i][0]++ : 1, i];
-  }
+	for (var i = 0; i < S.length; i++) {
+		temp[i] = [temp[i] ? temp[i][0]++ : 1, i];
+	}
 
-  return temp;
+	return temp;
 }
