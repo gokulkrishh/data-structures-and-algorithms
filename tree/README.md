@@ -2,6 +2,8 @@
 
 Unlike Array, LinkedList, Stack, Queues which are linear data structures, trees are hierarchical data structures.
 
+![Tree](./images/tree.jpg)
+
 ### Example:
 
 #### Binary Tree
