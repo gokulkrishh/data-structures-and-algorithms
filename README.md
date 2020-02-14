@@ -7,6 +7,7 @@
 - [Algorithms Analysis](./algorithms-analysis/README.md)
 - [Linked List](./linkedlist/README.md)
 - [Sorting](./sorting/README.md)
+- [Search](./search/README.md)
 - [Problems](./problems/README.md)
 
 ##### MIT Licensed
