@@ -41,13 +41,13 @@ To explain the above cases, let us see an example.
 
 ```js
 function linearSearch(list, target) {
-  for (var i = 0; i < list.length; i++) {
-    if (list[i] === target) {
-      return i; // if found return index `i`
-    }
-  }
+	for (var i = 0; i < list.length; i++) {
+		if (list[i] === target) {
+			return i; // if found return index `i`
+		}
+	}
 
-  return -1; // if not found return `-1`
+	return -1; // if not found return `-1`
 }
 
 linearSearch([1, 5, 6, 7, 8, 9, 10, 11], 10);
@@ -135,7 +135,7 @@ Time complexity is **rate of growth of time with respect to the inputs** taken d
 
 ```js
 function sumOfTwoNumbers(a, b) {
-  return a + b;
+	return a + b;
 }
 ```
 

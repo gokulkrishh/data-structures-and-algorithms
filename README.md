@@ -5,6 +5,7 @@
 ## Table of Contents
 
 - [Algorithms Analysis](./algorithms-analysis/README.md)
+- [Sorting Algorithms](./sorting/README.md)
 - [Problems](./problems/README.md)
 
 ##### MIT Licensed
