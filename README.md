@@ -8,7 +8,9 @@
 - [Linked List](./linkedlist/README.md)
 - [Sorting](./sorting/README.md)
 - [Search](./search/README.md)
-- [Problems](./problems/README.md)
+- [Tree](./tree/README.md)
+
+#### [Problems](./problems/README.md)
 
 ##### MIT Licensed
 
