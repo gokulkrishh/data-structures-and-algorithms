@@ -24,13 +24,13 @@
 */
 
 function maxDepth(A) {
-  function traverse(A) {
-    if (!A) return 0;
-    else {
-      return 1 + Math.max(traverse(A.left), traverse(A.right))
-    };
-  }
-  return traverse(A);
+	function traverse(A) {
+		if (!A) return 0;
+		else {
+			return 1 + Math.max(traverse(A.left), traverse(A.right));
+		}
+	}
+	return traverse(A);
 }
 
 maxDepth({ data: 1, left: { data: 2, left: null, right: null }, right: null }); // 2
