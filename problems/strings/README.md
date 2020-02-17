@@ -14,3 +14,5 @@
 1. [Check Anagram](./12.check_if_two_string_are_anagram.js)
 1. [First non repeating chars ](./13.first_non_repeating_char.js)
 1. [Subsequence of given string](./14.subsequence_of_given_string.js)
+1. [Numbers to words](./15.numbers_to_words.js)
+1. [Capitalize first and last chars of given string](./16.capitalize_first_and_last_char.js)

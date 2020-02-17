@@ -30,12 +30,12 @@
 // Solution 1 - Using Stack
 
 function isValidParentheses(str) {
-	if (str === '') return true; // Empty string
+	if (str === "") return true; // Empty string
 	var stack = [];
 	var parenthesesMap = {
-		'(': ')',
-		'{': '}',
-		'[': ']'
+		"(": ")",
+		"{": "}",
+		"[": "]"
 	};
 
 	for (var i = 0; i < str.length; i++) {
@@ -51,9 +51,9 @@ function isValidParentheses(str) {
 	return stack.length === 0; // If 0, then given str is valid
 }
 
-isValidParentheses('([[]])'); // True
-isValidParentheses('({[[]])'); // False
-isValidParentheses('({[]})'); // True
+isValidParentheses("([[]])"); // True
+isValidParentheses("({[[]])"); // False
+isValidParentheses("({[]})"); // True
 
 // Time Complexity: O(N)
 // Space Complexity: O(N)

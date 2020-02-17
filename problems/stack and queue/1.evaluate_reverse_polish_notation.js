@@ -16,37 +16,29 @@
     - When ever evaluating expression comes, one of the way to solve is to use stack implementation
 */
 
-var evalRPN = function (tokens) {
-  if (tokens.length === 1) return parseInt(tokens[0]);
-  var arr = [];
-  for (var i = 0; i < tokens.length; i++) {
-    var temp = tokens[i];
-    if (temp == "+") {
-      arr.push(arr.pop() + arr.pop())
-    }
-    else if (temp == "-") {
-      var val1 = arr.pop();
-      var val2 = arr.pop();
-      arr.push(val2 - val1);
+var evalRPN = function(tokens) {
+	if (tokens.length === 1) return parseInt(tokens[0]);
+	var arr = [];
+	for (var i = 0; i < tokens.length; i++) {
+		var temp = tokens[i];
+		if (temp == "+") {
+			arr.push(arr.pop() + arr.pop());
+		} else if (temp == "-") {
+			var val1 = arr.pop();
+			var val2 = arr.pop();
+			arr.push(val2 - val1);
+		} else if (temp == "/") {
+			var val1 = arr.pop();
+			var val2 = arr.pop();
+			arr.push((val2 / val1) | 0);
+		} else if (temp == "*") {
+			arr.push(arr.pop() * arr.pop());
+		} else {
+			arr.push(parseInt(temp));
+		}
+	}
 
-    }
-    else if (temp == "/") {
-      var val1 = arr.pop();
-      var val2 = arr.pop();
-      arr.push(val2 / val1 | 0)
-
-    }
-    else if (temp == "*") {
-      arr.push(arr.pop() * arr.pop());
-
-    }
-    else {
-      arr.push(parseInt(temp));
-    }
-
-  }
-
-  return arr[0];
+	return arr[0];
 };
 
 evalRPN(["2", "1", "+", "3", "*"]); // 9
