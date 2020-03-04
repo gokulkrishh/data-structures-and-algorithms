@@ -26,3 +26,4 @@
 1. [Keyboard Row](./24.keyboard_row.js)
 1. [Sum of Consecutive Integers](./25.sum_of_consecutive_integers.js)
 1. [First Duplicate](./26.first_duplicate.js)
+1. [Direction Reduction](./27.direction_reduction.js)
