@@ -27,3 +27,4 @@
 1. [Sum of Consecutive Integers](./25.sum_of_consecutive_integers.js)
 1. [First Duplicate](./26.first_duplicate.js)
 1. [Direction Reduction](./27.direction_reduction.js)
+1. [Max of sub arrays](./28.max_of_sub_arrays.js)
