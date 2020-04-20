@@ -7,21 +7,21 @@
 // Two Pointers Method
 
 function isCircular(node) {
-  if (!node) return false;
-  if (!node.next) return false;
+	if (!node) return false;
+	if (!node.next) return false;
 
-  var pointer1 = node;
-  var pointer2 = node.next;
+	var pointer1 = node;
+	var pointer2 = node.next;
 
-  // If pointer1 and pointer2 are equal, it has a cycle then return true
-  // else no cycle then return false
-  while (pointer1 !== pointer2) {
-    if (pointer2 === null || pointer2.next === null) return false; // Not circular linked list, if next node is null
-    pointer1 = pointer1.next;
-    pointer2 = pointer1.next.next;
-  }
+	// If pointer1 and pointer2 are equal, it has a cycle then return true
+	// else no cycle then return false
+	while (pointer1 !== pointer2) {
+		if (pointer2 === null || pointer2.next === null) return false; // Not circular linked list, if next node is null
+		pointer1 = pointer1.next;
+		pointer2 = pointer2.next.next;
+	}
 
-  return true;
+	return true;
 }
 
 var list1 = { val: 1, next: { val: 2, next: { val: 1, next: { val: 2, next: {} } } } }; // Circular list
