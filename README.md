@@ -10,7 +10,7 @@
 - [Search](./search/README.md)
 - [Tree](./tree/README.md)
 
-### [Problems]
+### [Problems](./problems)
 
 - [leetcode](./problems/leetcode/README.md)
 - [cracking coding interviews](./problems/cracking-coding-interviews/README.md)
