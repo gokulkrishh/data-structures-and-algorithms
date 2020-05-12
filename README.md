@@ -2,6 +2,8 @@
 
 > Basics for learning data structures and algorithms.
 
+![Big O Cheet Sheet](./bigocheatsheet.png)
+
 ## Table of Contents
 
 - [Algorithms Analysis](./algorithms-analysis/README.md)
