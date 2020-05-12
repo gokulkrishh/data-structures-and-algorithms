@@ -21,12 +21,12 @@ function isPermutation(str1, str2) {
 		return false;
 	}
 
-	str1 = str1
+	var str1 = str1
 		.split("")
 		.sort()
 		.join("");
 
-	str2 = str2
+	var str2 = str2
 		.split("")
 		.sort()
 		.join("");
@@ -39,7 +39,7 @@ isPermutation("abcde", "dcab"); // False
 isPermutation("dcfg", "cdfg"); // True
 
 // Time Complexity: O(N LOG N), due to storing complexity is increased
-// Space Complexity: O(A + B), A, B is length of str1, str2
+// Space Complexity: O(S), S is length of strings
 
 // Solution 2: Hash map
 function isPermutation(str1, str2) {
