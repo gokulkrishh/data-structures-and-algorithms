@@ -4,7 +4,7 @@
 
 | Total Problems |
 | :------------: |
-|      104       |
+|      105       |
 
 ## Table of Contents
 
@@ -16,6 +16,7 @@
 - [In Place](./in%20place/README.md)
 - [Linked List](./linked%20list/README.md)
 - [Numbers](./numbers/README.md)
+- [One Pass](./one%20pass/README.md)
 - [Recursion](./recursion/README.md)
 - [Search](./search/README.md)
 - [Stack & Queue](./stack%20and%20queue/README.md)
