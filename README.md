@@ -10,7 +10,10 @@
 - [Search](./search/README.md)
 - [Tree](./tree/README.md)
 
-#### [Problems](./problems/README.md)
+### [Problems]
+
+- [leetcode](./problems/leetcode/README.md)
+- [cracking coding interviews](./problems/cracking-coding-interviews/README.md)
 
 ##### MIT Licensed
 
