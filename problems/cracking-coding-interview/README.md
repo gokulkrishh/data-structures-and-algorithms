@@ -6,4 +6,6 @@
 | :------------: |
 |       1        |
 
+## Table of Contents
+
 - [Strings](./strings/README.md)
