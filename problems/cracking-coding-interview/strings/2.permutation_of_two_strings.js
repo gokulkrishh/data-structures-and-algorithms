@@ -9,6 +9,10 @@
 
 		Input: "dcfg" "cdfg!"
 		Output: false
+
+	Note:
+	- Is the given strings are case-sensitive?
+	- Does white space with string is considered to be different (Eg: "god" different from "   god ")
 */
 
 // Solution 1: Sorting
