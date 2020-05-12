@@ -13,7 +13,7 @@
 ### [Problems](./problems)
 
 - [leetcode](./problems/leetcode/README.md)
-- [cracking coding interviews](./problems/cracking-coding-interviews/README.md)
+- [cracking coding interviews](./problems/cracking-coding-interview/README.md)
 
 ##### MIT Licensed
 

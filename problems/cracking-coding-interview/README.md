@@ -1,9 +1,9 @@
-# Cracking coding interviews Problems
+# Cracking coding interview
 
 > At least one problem a day, keeps your lazy brain away (Mostly weekdays) :P
 
 | Total Problems |
 | :------------: |
-|       0        |
+|       1        |
 
-- [String](./string/README.md)
+- [Strings](./strings/README.md)
