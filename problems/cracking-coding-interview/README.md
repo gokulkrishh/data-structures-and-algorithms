@@ -8,4 +8,4 @@
 
 ## Table of Contents
 
-- [Strings](./strings/README.md)
+- [Chapter 1](./chapter-1/README.md)
