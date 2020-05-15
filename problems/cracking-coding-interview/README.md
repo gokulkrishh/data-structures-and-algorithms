@@ -4,8 +4,9 @@
 
 | Total Problems |
 | :------------: |
-|       3        |
+|       5        |
 
 ## Table of Contents
 
-- [Chapter 1](./chapter-1/README.md)
+- [Chapter 1 - Arrays & Strings](./chapter-1/README.md)
+- [Chapter 2 - Linked List](./chapter-2/README.md)
