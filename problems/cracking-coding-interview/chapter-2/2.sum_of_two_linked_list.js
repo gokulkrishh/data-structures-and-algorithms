@@ -47,6 +47,10 @@ function sumTwoList(l1, l2) {
 		l2 = l2.next;
 	}
 
+	if (carry > 0) {
+		result.next = { data: carry, next: null };
+	}
+
 	return result;
 }
 
