@@ -4,7 +4,7 @@
 
 | Total Problems |
 | :------------: |
-|      105       |
+|      106       |
 
 ## Table of Contents
 

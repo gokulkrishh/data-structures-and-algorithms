@@ -17,3 +17,4 @@
 1. [Numbers to words](./15.numbers_to_words.js)
 1. [Capitalize first and last chars of given string](./16.capitalize_first_and_last_char.js)
 1. [Given string is isogram or not?](./17.isograms.js)
+1. [Rotate the given string](./18.rotate_string.js)
