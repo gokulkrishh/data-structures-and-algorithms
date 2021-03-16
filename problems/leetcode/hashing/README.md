@@ -5,3 +5,4 @@
 1. [Set Matrix Zeros](./3.set_matrix_zeros.js)
 1. [Two Sum](./4.two_sum.js)
 1. [Distribute Candies](./5.distribute_candies.js)
+1. [Set Mismatch](./6.set_mismatch.js)
