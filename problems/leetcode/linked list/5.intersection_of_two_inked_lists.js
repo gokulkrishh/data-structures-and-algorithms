@@ -18,37 +18,73 @@
 
 // To create new list node
 function ListNode(val) {
-  this.val = val;
-  this.next = null;
+	this.val = val;
+	this.next = null;
 }
 
 var getIntersectionNode = function (headA, headB) {
-  var haveIntersection = null;
+	var haveIntersection = null;
 
-  if (!headA || !headB) return haveIntersection;
+	if (!headA || !headB) return haveIntersection;
 
-  var newHeadA = new ListNode(headA.val);
-  var newHeadB = new ListNode(headB.val);
-  newHeadA.next = headA.next;
-  newHeadB.next = headB.next;
+	var newHeadA = new ListNode(headA.val);
+	var newHeadB = new ListNode(headB.val);
+	newHeadA.next = headA.next;
+	newHeadB.next = headB.next;
 
-  while (newHeadA != null && newHeadB != null) {
-    var listAData = newHeadA.val;
-    var listBData = newHeadB.val;
+	while (newHeadA != null && newHeadB != null) {
+		var listAData = newHeadA.val;
+		var listBData = newHeadB.val;
 
-    if (listAData === listBData) {
-      haveIntersection = newHeadA;
-      return haveIntersection;
-    }
-    else if (listAData < listBData) {
-      newHeadA = newHeadA.next;
-    }
-    else if (listAData > listBData) {
-      newHeadB = newHeadB.next;
-    }
-  }
+		if (listAData === listBData) {
+			haveIntersection = newHeadA;
+			return haveIntersection;
+		} else if (listAData < listBData) {
+			newHeadA = newHeadA.next;
+		} else if (listAData > listBData) {
+			newHeadB = newHeadB.next;
+		}
+	}
 
-  return haveIntersection;
+	return haveIntersection;
+};
+
+var headA = { val: 1, next: { val: 3, next: null } };
+var headB = { val: 2, next: { val: 3, next: null } };
+
+getIntersectionNode(headA, headB); // { val: 3, next: null }
+
+// Time Complexity: O(N)
+// Space Complexity: O(1)
+
+// Solution 2
+
+var getIntersectionNode = function (headA, headB) {
+	if (!headA || !headB) {
+		return null;
+	}
+
+	var pointer1 = headA;
+	var pointer2 = headB;
+
+	while (pointer1 != pointer2) {
+		pointer1 = pointer1.next;
+		pointer2 = pointer2.next;
+
+		if (pointer1 === pointer2) {
+			return pointer1;
+		}
+
+		if (pointer1 === null) {
+			pointer1 = headB;
+		}
+
+		if (pointer2 === null) {
+			pointer2 = headA;
+		}
+	}
+
+	return pointer1;
 };
 
 var headA = { val: 1, next: { val: 3, next: null } };
