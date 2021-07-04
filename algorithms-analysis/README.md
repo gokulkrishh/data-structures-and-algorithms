@@ -164,9 +164,9 @@ When I run the above example 2, the problem is gone take `N` times to get the to
 | `O(log n)`     | Logarithmic | 😀  |
 | `O(n)`         | Linear      | 🥺  |
 | `O(n * log n)` | Log Linear  | 😣  |
-| `O(n^2)`       | Quadratic   | 😖  |
+| `O(n ^ 2)`     | Quadratic   | 😖  |
 | `O(n ^ 3)`     | Cubic       | 😫  |
-| `O(2n)`        | Exponential | 😷  |
+| `O(2 ^ n)`     | Exponential | 😷  |
 | `O(n!)`        | Factorial   | 😭  |
 
 ### Space complexity
