@@ -17,28 +17,26 @@
 
 */
 
-
 function findAnagram(arr) {
-  var temp = [];
-  if (arr.length === 0) return temp;
-  var obj = {};
+	var temp = [];
+	if (arr.length === 0) return temp;
+	var obj = {};
 
-  arr.forEach((str, index) => {
-    var sortedStr = str.split("").sort().join("");
-    
-    if (obj[sortedStr]) {
-      obj[sortedStr].push(index + 1);
-    }
-    else {
-      obj[sortedStr] = [index + 1];
-    }
-  });
+	arr.forEach((str, index) => {
+		var sortedStr = str.split("").sort().join("");
 
-  for (var i in obj) {
-    temp.push(obj[i]);
-  }
+		if (obj[sortedStr]) {
+			obj[sortedStr].push(index + 1);
+		} else {
+			obj[sortedStr] = [index + 1];
+		}
+	});
 
-  return temp;
+	for (var i in obj) {
+		temp.push(obj[i]);
+	}
+
+	return temp;
 }
 
 findAnagram(["cat", "dog", "god", "tca"]); // [[1, 4], [2, 3]]

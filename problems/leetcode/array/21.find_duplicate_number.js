@@ -20,16 +20,16 @@
 
 // Solution 1 - HashMap
 
-var findDuplicate = function(nums) {
-  var hash = {};
+var findDuplicate = function (nums) {
+	var hash = {};
 
-  for (var i = 0; i < nums.length; i++) {
-    if (!hash[nums[i]]) {
-      hash[nums[i]] = 1;
-    } else {
-      return nums[i];
-    }
-  }
+	for (var i = 0; i < nums.length; i++) {
+		if (!hash[nums[i]]) {
+			hash[nums[i]] = 1;
+		} else {
+			return nums[i];
+		}
+	}
 };
 
 findDuplicate([3, 1, 3, 4, 2]); // 3
@@ -38,18 +38,28 @@ findDuplicate([1, 3, 4, 2, 2]); // 2
 // Time Complexity: O(N)
 // Space Complexity: O(N)
 
-// Solution 2 - Pointers
+// Solution 2 - Pointers (fast and slow)
+// When fast is running faster than slow, then they must meet at some point. That point is the intersection of cycle
+// Again start from slow form begining, fast and slow will meet at some point where there cycle is detected and we can find the duplicate
 
-var findDuplicate = function(nums) {
-  var slowPointer = nums[0];
-  var fastPointer = slowPointer;
+var findDuplicate = function (nums) {
+	var slowPointer = nums[0];
+	var fastPointer = nums[0];
 
-  while (slowPointer !== fastPointer) {
-    slowPointer = nums[slowPointer];
-    fastPointer = nums[nums[fastPointer]];
-  }
+	do {
+		slowPointer = nums[slowPointer];
+		fastPointer = nums[nums[fastPointer]];
+	} while (slowPointer !== fastPointer);
 
-  return slowPointer;
+	// Intersection
+	slowPointer = nums[0];
+
+	while (slowPointer !== fastPointer) {
+		slowPointer = nums[slowPointer];
+		fastPointer = nums[fastPointer];
+	}
+
+	return fastPointer;
 };
 
 findDuplicate([3, 1, 3, 4, 2]); // 3
